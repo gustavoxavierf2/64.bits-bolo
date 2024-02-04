@@ -5,31 +5,37 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Comic Sans MS, Comic Sans, cursive;
-  }
-h1{
+}
+
+h1 {
     font-size: 60px;
     font-weight: 600;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: gray;
 }
+
 /* header */
-.logoNavBar{
+.logoNavBar {
     width: 3rem;
     border-radius: 30rem;
 }
 
-main {
-    
-}
-
 /* session 1*/
-.logoPrincipal{
+.logoPrincipal {
     width: 10rem;
     border-radius: 30rem;
 }
+.logoPrincipal2 {
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+   
+}
+
 /* session 1*/
 /* Estilo padrão para a classe .seletores */
 .seletores {
@@ -48,7 +54,7 @@ main {
 #produtosSeletor {
     width: 145px;
     height: 35px;
-   
+
 }
 
 /* Estilo para o botão ativo */
@@ -56,10 +62,7 @@ main {
     background-color: #FC827E;
 }
 
-
-
-
-.links{
+.links {
     display: flex;
     align-items: center;
     height: 60px;
@@ -67,44 +70,53 @@ main {
     opacity: 90%;
     color: white;
     font-weight: 550;
-    border-radius: 15px; 
+    border-radius: 15px;
     text-decoration: none;
 }
-.hoverLinks:hover{
+
+.hoverLinks:hover {
     background-color: #333333;
     opacity: 100%;
 }
 
-.svg{
-margin-right: 15px;  
+.svg {
+    margin-right: 15px;
 }
-.whatsapp{
+
+.whatsapp {
     border: none;
     background: none;
     transition: transform 0.3s ease-in-out;
 }
-.whatsapp:hover{
-    transform: translate(0px ,-8px);
+
+.whatsapp:hover {
+    transform: translate(0px, -8px);
 }
 
 footer {
-    color: #fff; /* Cor do texto do rodapé */
+    color: #fff;
+    /* Cor do texto do rodapé */
     background-color: #1A1A1A;
-    height: 10vh; /* Altura desejada para o rodapé em relação à altura da viewport */
+    height: 10vh;
+    /* Altura desejada para o rodapé em relação à altura da viewport */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
-@media (min-width: 500px) {
+@media (min-width: 767px) {
     footer {
         background-color: #1A1A1A;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        color: #fff; /* Cor do texto do rodapé */
-        height: 5vh; /* Altura desejada para o rodapé em relação à altura da viewport */
+        color: #fff;
+        /* Cor do texto do rodapé */
+        height: 7vh;
+        /* Altura desejada para o rodapé em relação à altura da viewport */
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
+
