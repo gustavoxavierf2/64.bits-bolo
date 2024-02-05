@@ -6,117 +6,96 @@ body {
     flex-direction: column;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
+/* <!-- topo --> */
+    .logoNavBar {
+        width: 3rem;
+        border-radius: 30rem;
+    }
 
-h1 {
-    font-size: 60px;
-    font-weight: 600;
-}
+/* <!-- session de apresentação --> */
+    .logoPrincipal {
+        width: 10rem;
+        border-radius: 30rem;
+    }
+    #titulo {
+        font-size: 60px;
+        font-weight: 600;
+    }  
+    .link {
+        text-decoration: none;
+        color: gray;
+    }
 
-/* .content{
-    display: none;
-}
-.content.show{
-    display:block ;
-} */
-.link {
-    text-decoration: none;
-    color: gray;
-}
-
-/* header */
-.logoNavBar {
-    width: 3rem;
-    border-radius: 30rem;
-}
-
-/* session 1*/
-.logoPrincipal {
-    width: 10rem;
-    border-radius: 30rem;
-}
-
-
-/* session 1*/
-/* Estilo padrão para a classe .seletores */
-.seletores {
-    border: none;
-    border-radius: 25px;
-    font-weight: 900;
-    background-color: black;
-    color: white
-}
-
-#socialSeletor {
-    width: 90px;
-    height: 35px;
-}
-
-#produtosSeletor {
-    width: 145px;
-    height: 35px;
-
-}
-
-/* Estilo para o botão ativo */
-.seletor-ativo {
-    background-color: #FC827E;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    background-color: #333333;
-    opacity: 90%;
-    color: white;
-    font-weight: 550;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-.hoverLinks:hover {
-    background-color: #333333;
-    opacity: 100%;
-}
-
-.svg {
-    margin-right: 15px;
-}
-
-.whatsapp {
-    border: none;
-    background: none;
-    transition: transform 0.3s ease-in-out;
-}
-
-.whatsapp:hover {
-    transform: translate(0px, -8px);
-}
-
-footer {
-    color: #fff;
-    /* Cor do texto do rodapé */
-    background-color: #1A1A1A;
-    height: 10vh;
-    /* Altura desejada para o rodapé em relação à altura da viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
-@media (min-width: 500px) {
+/* <!-- arvore de link/conteudo --> */
+    .seletores {
+        border: none;
+        border-radius: 25px;
+        font-weight: 900;
+        background-color: black;
+        color: white
+    }
+    #socialSeletor {
+        width: 90px;
+        height: 35px;
+    }
+    #produtosSeletor {
+        width: 145px;
+        height: 35px;
+    }
+    /* Estilo para o botão ativo */
+    .seletor-ativo {
+        background-color: #FC827E;
+    }
+/* <!-- links/conteudo --> */
+    .links {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        background-color: #333333;
+        opacity: 90%;
+        color: white;
+        font-weight: 550;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+    .hoverLinks:hover {
+        background-color: #333333;
+        opacity: 100%;
+    }
+    .svg {
+        margin-right: 15px;
+    }
+/* <!-- botao whatsapp --> */
+    .whatsapp {
+        border: none;
+        background: none;
+        transition: transform 0.3s ease-in-out;
+    }
+    .whatsapp:hover {
+        transform: translate(0px, -8px);
+    }
+/* <!-- final --> */
     footer {
-        background-color: #1A1A1A;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
         color: #fff;
         /* Cor do texto do rodapé */
-        height: 5vh;
+        background-color: #1A1A1A;
+        height: 10vh;
         /* Altura desejada para o rodapé em relação à altura da viewport */
         display: flex;
         align-items: center;
         justify-content: center;
     }
-}
+    /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
+    @media (min-width: 500px) {
+        footer {
+            background-color: #1A1A1A;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            color: #fff;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
