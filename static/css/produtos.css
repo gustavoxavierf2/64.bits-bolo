@@ -51,9 +51,7 @@ body {
     }
 /* <!-- links/conteudo --> */
     .conteudos{
-       border-radius: 20px;
-       
-       
+       border-radius: 20px; 
     }
     .imagem-com-texto {
         position: relative;
@@ -62,8 +60,12 @@ body {
     .texto-sobre-imagem {
         position: absolute;
         padding-top: 3%;
-        padding-left: 13%;
+        padding-left: 10%;
         color: white; 
+    }
+    .svg {
+        width: 20%;
+        padding-bottom: 2%;
     }
     
     @media (min-width: 500px) {

@@ -62,9 +62,26 @@ body {
         background-color: #333333;
         opacity: 100%;
     }
-    .svg {
-        margin-right: 15px;
+    /* .seta_ifood { 
+        margin-left: 70rem;
     }
+    .seta_youtube { 
+        margin-left: 68.7rem;
+    }
+    .seta_instagram { 
+        margin-left: 67.8rem;
+    }
+    @media (max-width: 767px) {
+        .seta_ifood { 
+            margin-left: 9rem;
+        }
+        .seta_youtube { 
+            margin-left: 7.7rem;
+        }
+        .seta_instagram { 
+            margin-left: 6.8rem;
+        }
+    } */
 /* <!-- botao whatsapp --> */
     .whatsapp {
         border: none;
@@ -86,7 +103,7 @@ body {
         justify-content: center;
     }
     /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
-    @media (min-width: 500px) {
+    @media (min-width: 767px) {
         footer {
             background-color: #1A1A1A;
             border-top-left-radius: 8px;
