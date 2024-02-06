@@ -44,10 +44,10 @@
             <!-- menu -->
             <div class="row">
                 <div class="col-xs-6 col-sm-12 col-md-2 col-lg-1 col-xl-1 p-0">
-                    <button id="socialSeletor" class="seletores seletor-ativo ">Social</button>
+                    <button id="socialSeletor" class="seletores seletor-ativo" onclick="changeActiveSelector(this)">Social</button>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-10 col-lg-10 col-xl-11 p-0 mt-2 mt-md-0 ">
-                   <button id="produtosSeletor" class="seletores">Produtos</button>
+                <div class="col-xs-6 col-sm-6 col-md-10 col-lg-10 col-xl-11 p-0 mt-2 mt-md-0">
+                    <button id="produtosSeletor" class="seletores" onclick="changeActiveSelector(this)">Produtos</button>
                 </div>
             </div>
             <!-- links/conteudo -->
@@ -91,6 +91,16 @@
 </body>
 
 <script>
+
+    function changeActiveSelector(clickedButton) {
+        // Remove a classe 'seletor-ativo' de todos os botões
+        document.querySelectorAll('.seletores').forEach(function(button) {
+            button.classList.remove('seletor-ativo');
+        });
+
+        // Adiciona a classe 'seletor-ativo' apenas ao botão clicado
+        clickedButton.classList.add('seletor-ativo');
+    }
     $(document).ready(function(){      
         $("#socialSeletor").click(function(){
             $("#conteudo ").hide();
