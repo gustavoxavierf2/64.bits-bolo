@@ -5,18 +5,25 @@
         transform: translateY(0%);
     }
 }
+@keyframes transiçao_titulos {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0%);
+    }
+}
 
 #conteudo {
     animation-name: transiçao;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     border-right: 6px solid transparent; /* Borda direita */
-    border-image: linear-gradient(rgb(224, 196, 223), rgb(246, 50, 253)) 1; /* Gradiente de cor nos lados esquerdo e direito */
+    border-image: linear-gradient(#fcf0e3, rgb(241, 135, 245)) 1; /* Gradiente de cor nos lados esquerdo e direito */
 }
 /* <!-- links/conteudo --> */
     .conteudos{
        border-radius: 25px; 
       
-       filter: drop-shadow(-3px -3px 10px rgb(209, 194, 205));
+       filter: drop-shadow(-5px -6px 9px rgba(230, 89, 89, 0.336));
     }
     .imagem-com-texto {
         position: relative;
@@ -33,6 +40,8 @@
         padding-top: 3%;
         padding-left: 10%;
         color: white; 
+        animation-name: transiçao_titulos;
+        animation-duration: 2s;
     }
     .svg {
         width: 20%;

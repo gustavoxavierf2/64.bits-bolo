@@ -78,7 +78,9 @@
     </main>
 <!-- botao whatsapp -->
     <div class="ms-1 mb-1 ms-sm-3 mb-sm-3 ms-md-3 mb-md-3">
-        <a id="botaoEnviarWhatsapp" target="_blank"><button class="whatsapp"><img src="../static/assets/icons/whatsapp-8.svg" class="img-fluid" alt=""></button></a>
+        <a href="https://api.whatsapp.com/send?phone=5577988180366&text=em desenvolvimento" target="_blank">
+            <button class="whatsapp"><img src="../static/assets/icons/whatsapp-8.svg" class="img-fluid" alt=""></button>
+        </a>
     </div>
 <!-- final -->
     <footer>
@@ -110,21 +112,12 @@
 
         $("#produtosSeletor").click(function(){
             $("#conteudo").load("/templates/produtos.html", function(){
-                $("#arvore_links").hide();
+                
                 $("#conteudo").show();
+                $("#arvore_links").hide();
             });    
         }); 
     });
 
-    // Exemplo de chamada da função ao clicar em um botão
-    document.addEventListener('DOMContentLoaded', function () {
-        var botaoEnviarWhatsapp = document.getElementById('botaoEnviarWhatsapp');
-
-        botaoEnviarWhatsapp.addEventListener('click', function(event) {
-            event.preventDefault(); // Impede o comportamento padrão do link
-            abrirWhatsApp();
-        });
-    });
-     
 </script>
 </html>
