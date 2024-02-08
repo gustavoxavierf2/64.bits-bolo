@@ -7,6 +7,16 @@ body {
     font-family: 'Roboto'; 
 }
 /* <!-- topo --> */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.8s ease, border-radius 0.8s ease; /* Adiciona uma transição suave */
+}
+    .header-scrolled {
+        background-color: #f1cba181; /* Define a cor de fundo quando rolado para baixo */
+        border-bottom-right-radius: 20px;
+    }
     .logoNavBar {
         width: 3rem;
         border-radius: 30rem;
@@ -24,6 +34,7 @@ body {
     .link {
         text-decoration: none;
         color: gray;
+        
     }
 
 /* <!-- arvore de link/conteudo --> */
@@ -51,16 +62,16 @@ body {
         display: flex;
         align-items: center;
         height: 60px;
-        background-color: #333333;
-        opacity: 90%;
+        background-color: #535050;
+        opacity: 0.9;
         color: white;
         font-weight: 550;
-        border-radius: 15px;
+        border-radius: 30px;
         text-decoration: none;
     }
     .hoverLinks:hover {
         background-color: #333333;
-        opacity: 100%;
+        opacity: 1;
     }
     /* .seta_ifood { 
         margin-left: 70rem;
@@ -95,7 +106,8 @@ body {
     footer {
         color: #fff;
         /* Cor do texto do rodapé */
-        background-color: #1A1A1A;
+        background-color: #f1cba181;
+        border-top-left-radius: 20px;
         height: 10vh;
         /* Altura desejada para o rodapé em relação à altura da viewport */
         display: flex;
@@ -105,10 +117,8 @@ body {
     /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
     @media (min-width: 767px) {
         footer {
-            background-color: #1A1A1A;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            color: #fff;
+            background-color: #f1cba181;
+            border-top-left-radius: 20px;
             height: 5vh;
             display: flex;
             align-items: center;

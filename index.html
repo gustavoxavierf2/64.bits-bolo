@@ -10,18 +10,17 @@
 </head>
 <body style="background-color: #fcf0e3;">
 <!-- topo -->
-    <header class="container-fluid">
+    <header id="navbar" class="container-fluid ">
         <div class="row">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-4 ps-4 ">
-                <a href="#" class="link"><h5>Links</h5> </a>
-                        
-            </div>
-        <!-- criar um menu suspenso a posterior -->
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-end pt-2 pe-4">
-                <img src="/static/assets/img/img1.png" class="logoNavBar" alt="">        
-            </div>   
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-4 ps-4 ">
+                    <a href="#" class="link"><h5>Links</h5> </a>             
+                </div>
+            <!-- criar um menu suspenso a posterior -->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-end pt-2 pe-4">
+                    <img src="/static/assets/img/img1.png" class="logoNavBar" alt="">        
+                </div><hr class="mt-2">         
         </div>
-    </header><hr>
+    </header>
 
     <main class="flex-grow-1 p-4 ps-sm-5 pe-sm-5 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5 ps-xl-5 pe-xl-5">
         <div class="container d-flex justify-content-center">
@@ -94,6 +93,14 @@
 </body>
 
 <script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('header-scrolled'); // Adiciona a classe quando a página for rolada para baixo
+        } else {
+            navbar.classList.remove('header-scrolled'); // Remove a classe quando a página for rolada para o topo
+        }
+    });
 
     function changeActiveSelector(clickedButton) {
         // Remove a classe 'seletor-ativo' de todos os botões
@@ -114,7 +121,6 @@
         });
         
         $("#produtosSeletor").click(function(){
-            
             // Carrega o conteúdo da página produtos.html
             $("#conteudo").load("/templates/produtos.html", function(){
                 // Define um atraso para simular o carregamento (opcional)
@@ -126,8 +132,6 @@
             });    
         }); 
     });
-
-
-
+    
 </script>
 </html>
