@@ -41,7 +41,7 @@
         padding-left: 10%;
         color: white; 
         animation-name: transiçao_titulos;
-        animation-duration: 2s;
+        animation-duration: 1s;
     }
     .svg {
         width: 20%;

@@ -13,7 +13,8 @@
     <header class="container-fluid">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-4 ps-4 ">
-                <a href="#" class="link"><h5>Links</h5> </a>        
+                <a href="#" class="link"><h5>Links</h5> </a>
+                        
             </div>
         <!-- criar um menu suspenso a posterior -->
             <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-end pt-2 pe-4">
@@ -104,27 +105,27 @@
         clickedButton.classList.add('seletor-ativo');
     }
     
-    $(document).ready(function(){      
-    $("#socialSeletor").click(function(){
-        $("#arvore_links").show();
+    $(document).ready(function(){   
         $("#conteudo").hide();
+
+        $("#socialSeletor").click(function(){
+            $("#arvore_links").show();
+            $("#conteudo").hide();
+        });
+        
+        $("#produtosSeletor").click(function(){
+            
+            // Carrega o conteúdo da página produtos.html
+            $("#conteudo").load("/templates/produtos.html", function(){
+                // Define um atraso para simular o carregamento (opcional)
+                setTimeout(function() { 
+                    // Exibe o conteúdo
+                    $("#conteudo").show();
+                    $("#arvore_links").hide();
+                }, 250); // Ajuste o tempo do atraso conforme necessário
+            });    
+        }); 
     });
-
-    $("#produtosSeletor").click(function(){
-        // Oculta o conteúdo antes de carregar
-        $("#conteudo").hide();
-
-        // Carrega o conteúdo da página produtos.html
-        $("#conteudo").load("/templates/produtos.html", function(){
-            // Define um atraso de 500 milissegundos (0.5 segundos)
-            setTimeout(function() {
-                // Após o atraso, exibe o conteúdo
-                $("#conteudo").show();
-                $("#arvore_links").hide();
-            }, 80); // Ajuste o tempo do atraso conforme necessário
-        });    
-    }); 
-});
 
 
 
