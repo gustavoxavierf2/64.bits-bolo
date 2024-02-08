@@ -3,7 +3,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
         <div type="button" data-bs-toggle="modal" data-bs-target="#modal_1" class="row imagem-com-texto">
             <img  src="/static/assets/img/images.jfif" class="img-fluid conteudos" alt="">
-            <div class="texto-sobre-imagem" style="display: none;">
+            <div class="texto-sobre-imagem" >
                 <h6>OVOS DE PASCOA</h6>
                 <div class="d-flex flex-column ">
                    
@@ -42,7 +42,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
     <div type="button" data-bs-toggle="modal" data-bs-target="#modal_2" class="row imagem-com-texto">
         <img src="/static/assets/img/734473d2621bf058f70286dd880eee4b.jpg" class="img-fluid  conteudos" alt="">
-        <div class="texto-sobre-imagem" style="display: none;">
+        <div class="texto-sobre-imagem" >
             <h6>OVOS DE PASCOA</h6>
             <div class="d-flex flex-column ">
                
@@ -80,7 +80,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
     <div type="button" data-bs-toggle="modal" data-bs-target="#modal_3" class="row imagem-com-texto">
         <img src="/static/assets/img/3485d1fe7818c0ef2ff849021bb238a7.jpg" class="img-fluid conteudos" alt="">
-        <div class="texto-sobre-imagem" style="display: none;">
+        <div class="texto-sobre-imagem" >
             <h6>OVOS DE PASCOA</h6>
             <div class="d-flex flex-column ">
                
@@ -118,7 +118,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
     <div type="button" data-bs-toggle="modal" data-bs-target="#modal_4" class="row imagem-com-texto">
         <img src="/static/assets/img/a259e2d5b9110d3a1bec4b6b8ef515c5.jpg" class="img-fluid conteudos" alt="">
-        <div class="texto-sobre-imagem" style="display: none;">
+        <div class="texto-sobre-imagem" >
             <h6>OVOS DE PASCOA</h6>
             <div class="d-flex flex-column ">
                
@@ -156,7 +156,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
     <div type="button" data-bs-toggle="modal" data-bs-target="#modal_5" class="row imagem-com-texto">
         <img src="/static/assets/img/57e62b277e10ef502f2cc2ed4623f97f.jpg" class="img-fluid conteudos" alt="">
-        <div class="texto-sobre-imagem" style="display: none;">
+        <div class="texto-sobre-imagem" >
             <h6>OVOS DE PASCOA</h6>
             <div class="d-flex flex-column ">
                
@@ -194,7 +194,7 @@
 <div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-4 mt-3 ">
     <div type="button" data-bs-toggle="modal" data-bs-target="#modal_6" class="row imagem-com-texto">
         <img src="/static/assets/img/3798d24f503e484a2e3195c5cee6cf1c.jpg" class="img-fluid conteudos" alt="">
-        <div class="texto-sobre-imagem" style="display: none;">
+        <div class="texto-sobre-imagem" >
             <h6>OVOS DE PASCOA</h6>
             <div class="d-flex flex-column ">
                
@@ -230,17 +230,3 @@
     </div>
 </div>
 
-<script>
-    // Seleciona todas as imagens dentro das divs com a classe 'imagem-com-texto'
-    var imagens = document.querySelectorAll('.imagem-com-texto img');
-
-    // Itera sobre todas as imagens
-    imagens.forEach(function(imagem) {
-        // Adiciona um evento 'load' para cada imagem
-        imagem.onload = function() {
-            // Quando a imagem é carregada completamente, encontra a div 'texto-sobre-imagem' correspondente e a exibe
-            var divTexto = imagem.parentNode.querySelector('.texto-sobre-imagem');
-            divTexto.style.display = 'block';
-        };
-    });
-</script>

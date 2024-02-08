@@ -105,19 +105,28 @@
     }
     
     $(document).ready(function(){      
-        $("#socialSeletor").click(function(){
-            $("#conteudo ").hide();
-            $("#arvore_links").show();
-        });
+    $("#socialSeletor").click(function(){
+        $("#arvore_links").show();
+        $("#conteudo").hide();
+    });
 
-        $("#produtosSeletor").click(function(){
-            $("#conteudo").load("/templates/produtos.html", function(){
-                
+    $("#produtosSeletor").click(function(){
+        // Oculta o conteúdo antes de carregar
+        $("#conteudo").hide();
+
+        // Carrega o conteúdo da página produtos.html
+        $("#conteudo").load("/templates/produtos.html", function(){
+            // Define um atraso de 500 milissegundos (0.5 segundos)
+            setTimeout(function() {
+                // Após o atraso, exibe o conteúdo
                 $("#conteudo").show();
                 $("#arvore_links").hide();
-            });    
-        }); 
-    });
+            }, 30); // Ajuste o tempo do atraso conforme necessário
+        });    
+    }); 
+});
+
+
 
 </script>
 </html>
