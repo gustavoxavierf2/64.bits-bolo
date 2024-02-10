@@ -14,7 +14,6 @@
 }
 
 #conteudo {
-    width: 100vh;
     animation-name: transiçao;
     animation-duration: 0.8s;
     border-right: 8px solid transparent; /* Borda direita */
