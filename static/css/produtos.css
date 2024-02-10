@@ -19,7 +19,7 @@
     border-right: 8px solid transparent; /* Borda direita */
     border-image: linear-gradient(#F9C4CA, #BD6947, rgb(234, 225, 235)) 1; /* Gradiente de cor nos lados esquerdo e direito */
 }
-@media (min-width: 500px) {
+@media (min-width: 1025px) {
     #conteudo {
         width: 200%;
         animation-name: transiçao;
