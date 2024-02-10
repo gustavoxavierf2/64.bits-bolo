@@ -17,7 +17,7 @@
     animation-name: transiçao;
     animation-duration: 0.8s;
     border-right: 8px solid transparent; /* Borda direita */
-    border-image: linear-gradient(#fcf0e3, rgb(241, 135, 245)) 1; /* Gradiente de cor nos lados esquerdo e direito */
+    border-image: linear-gradient(#F9C4CA, #BD6947, rgb(234, 225, 235)) 1; /* Gradiente de cor nos lados esquerdo e direito */
 }
 @media (min-width: 500px) {
     #conteudo {
