@@ -8,14 +8,15 @@ body {
 }
 /* <!-- topo --> */
 header {
+    background-color: #4e3a3aef;
     position: fixed;
     top: 0;
     z-index: 1000;
     transition: background-color 0.8s ease, border-radius 0.8s ease; /* Adiciona uma transição suave */
 }
     .header-scrolled {
-        background-color: #f1cba181; /* Define a cor de fundo quando rolado para baixo */
-        border-bottom-right-radius: 20px;
+        background-color: #4e3a3ad3; /* Define a cor de fundo quando rolado para baixo */
+        border-bottom-right-radius: 30px;
     }
     .logoNavBar {
         width: 3rem;
@@ -38,6 +39,11 @@ header {
     }
 
 /* <!-- arvore de link/conteudo --> */
+@media (min-width: 1025px) {
+    .tamanho {
+        width: 28%;
+    }
+}
     .seletores {
         border: none;
         border-radius: 25px;
@@ -50,7 +56,7 @@ header {
         height: 35px;
     }
     #produtosSeletor {
-        width: 145px;
+        width: 120px;
         height: 35px;
     }
     /* Estilo para o botão ativo */
@@ -60,39 +66,21 @@ header {
 /* <!-- links/conteudo --> */
     .links {
         display: flex;
+        justify-content: center;
         align-items: center;
         height: 60px;
-        background-color: #535050;
+        background-color: #43251f;
         opacity: 0.9;
         color: white;
         font-weight: 550;
-        border-radius: 30px;
+        border-radius: 10px;
         text-decoration: none;
+        
     }
     .hoverLinks:hover {
-        background-color: #333333;
+        background-color: #b890d19d;
         opacity: 1;
     }
-    /* .seta_ifood { 
-        margin-left: 70rem;
-    }
-    .seta_youtube { 
-        margin-left: 68.7rem;
-    }
-    .seta_instagram { 
-        margin-left: 67.8rem;
-    }
-    @media (max-width: 767px) {
-        .seta_ifood { 
-            margin-left: 9rem;
-        }
-        .seta_youtube { 
-            margin-left: 7.7rem;
-        }
-        .seta_instagram { 
-            margin-left: 6.8rem;
-        }
-    } */
 /* <!-- botao whatsapp --> */
     .whatsapp {
         border: none;
@@ -102,11 +90,16 @@ header {
     .whatsapp:hover {
         transform: translate(0px, -8px);
     }
+    .whatsapp_rodape {
+        border: none;
+        background: none;
+      
+    }
 /* <!-- final --> */
     footer {
         color: #fff;
         /* Cor do texto do rodapé */
-        background-color: #f1cba181;
+        background-color: #4e3a3aef;
         border-top-left-radius: 20px;
         height: 10vh;
         /* Altura desejada para o rodapé em relação à altura da viewport */
@@ -117,9 +110,9 @@ header {
     /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
     @media (min-width: 767px) {
         footer {
-            background-color: #f1cba181;
+            background-color: #4e3a3aef;
             border-top-left-radius: 20px;
-            height: 5vh;
+            height: 8vh;
             display: flex;
             align-items: center;
             justify-content: center;
