@@ -14,6 +14,7 @@
 }
 
 #conteudo {
+    width: 100vh;
     animation-name: transiçao;
     animation-duration: 0.8s;
     border-right: 8px solid transparent; /* Borda direita */
@@ -41,6 +42,7 @@
     .imagem-com-texto:hover {
         transform: translate(0px, 15px) scale(0.9);    
     }
+    
     .texto-sobre-imagem {
         position: absolute;
         padding-top: 3%;
