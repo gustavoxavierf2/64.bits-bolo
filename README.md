@@ -10,7 +10,8 @@ Este projeto facilita o gerenciamento de links através de uma árvore de links 
 - Bootstrap
 
 ## Executando o Projeto
-<img src="static/assets/img/Captura de tela 2024-05-30 152405.png" alt="Descrição da Imagem" width="400"/>
+<img src="static/assets/img/Captura de tela 2024-05-30 152405.png" alt="Descrição da Imagem" width="500"/>
+<img src="static/assets/img/Captura de tela 2024-05-30 152601.png" alt="Descrição da Imagem" width="500"/>
 
 
 ### Pré-requisitos
