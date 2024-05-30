@@ -30,9 +30,11 @@
 }
 /* <!-- links/conteudo --> */
     .conteudos{
-       border-radius: 25px; 
-      
-       filter: drop-shadow(-5px -6px 9px rgba(230, 89, 89, 0.336));
+        border-width: 2px;
+        border-style: dashed;
+        border-image: linear-gradient(to right, #171831, #1e1d2e) 1;
+        padding: 0;
+        filter: drop-shadow(-5px -6px 9px rgba(139, 28, 28, 0.336));
     }
     .imagem-com-texto {
         position: relative;
@@ -46,7 +48,7 @@
         position: absolute;
         padding-top: 3%;
         padding-left: 10%;
-        color: rgb(255, 255, 255); 
+        color: rgb(252, 252, 252); 
         animation-name: transiçao_titulos;
         animation-duration: 1s;
     }
@@ -76,5 +78,5 @@
     }
 
     .cor_do_topo {
-        background-color: #f8daba;
+        background-color: #5a3208;
     }

@@ -5,17 +5,23 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto'; 
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
+
 /* <!-- topo --> */
 header {
-    background-color: #4e3a3aef;
+    background-color: #5e2f1e;
     position: fixed;
     top: 0;
     z-index: 1000;
     transition: background-color 0.8s ease, border-radius 0.8s ease; /* Adiciona uma transição suave */
 }
     .header-scrolled {
-        background-color: #4e3a3ad3; /* Define a cor de fundo quando rolado para baixo */
+        background-color: #5e2f1ec0; /* Define a cor de fundo quando rolado para baixo */
         border-bottom-right-radius: 30px;
     }
     .logoNavBar {
@@ -61,7 +67,7 @@ header {
     }
     /* Estilo para o botão ativo */
     .seletor-ativo {
-        background-color: #FC827E;
+        background-color: #5e2f1e;
     }
 /* <!-- links/conteudo --> */
     .links {
@@ -69,7 +75,7 @@ header {
         justify-content: center;
         align-items: center;
         height: 60px;
-        background-color: #43251f;
+        background-color: #422e2cc5;
         opacity: 0.9;
         color: white;
         font-weight: 550;
@@ -78,7 +84,7 @@ header {
         
     }
     .hoverLinks:hover {
-        background-color: #b890d19d;
+        background-color: #2e1e1c;
         opacity: 1;
     }
 /* <!-- botao whatsapp --> */
@@ -88,7 +94,7 @@ header {
         transition: transform 0.3s ease-in-out;
     }
     .whatsapp:hover {
-        transform: translate(0px, -8px);
+        transform: translate(-4px, 0px);
     }
     .whatsapp_rodape {
         border: none;
@@ -99,8 +105,8 @@ header {
     footer {
         color: #fff;
         /* Cor do texto do rodapé */
-        background-color: #4e3a3aef;
-        border-top-left-radius: 20px;
+        background-color: #5e2f1ec0;
+        border-top-left-radius: 30px;
         height: 10vh;
         /* Altura desejada para o rodapé em relação à altura da viewport */
         display: flex;
@@ -110,8 +116,8 @@ header {
     /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
     @media (min-width: 767px) {
         footer {
-            background-color: #4e3a3aef;
-            border-top-left-radius: 20px;
+            background-color: #5e2f1ec0;
+            border-top-left-radius: 30px;
             height: 8vh;
             display: flex;
             align-items: center;
@@ -121,5 +127,14 @@ header {
     .whatsapp_size {
         width: 22px;
     }
-    
-    
+    .seta-cima {
+        position:fixed;
+        display:none;
+        top:84%;
+        padding:8px 0px;
+        background-color:rgb(255, 255, 255);
+        right:50px;   
+        border-radius:10px;
+        filter:drop-shadow(5px 5px 10px #00000057);
+        transition:all .2s ease-in
+    }

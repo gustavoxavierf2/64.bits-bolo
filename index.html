@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,16 +9,16 @@
 <!-- titulo de aba do navegador -->
     <title>64 bits</title>
 </head>
-<body style="background-image: url(static/assets/img/Pink_triangle_vector_4K_abstract_design_3840x2160.jpg) ;">
+<body style=" background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.658));;">
 <!-- topo -->
     <header id="navbar" class="container-fluid ">
         <div class="row mb-2">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 pt-4 ps-4 ">
-                    <a href="/index.html" class="link"><h5>Home</h5> </a>             
+                    <a class='link' href='/'><h5>Home</h5> </a>             
                 </div>
             <!-- criar um menu suspenso a posterior -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-end pt-2 pe-4">
-                    <img src="/static/assets/img/icon page.jpg" class="logoNavBar" alt="">    
+                    <img src="/static/assets/img/home.jpg" class="logoNavBar" alt="">    
                 </div>        
         </div>
     </header>
@@ -26,18 +27,19 @@
         <div class="container d-flex justify-content-center">
 <!-- session de apresentação -->
             <div class="text-center mt-5">
-                <img src="/static/assets/img/icon page.jpg" class="mt-4 logoPrincipal" alt="">  
-                <h1 id="titulo" class="m-0">Miyu Cake</h1>
-                <a href="#" class="link">kawaii-cake</a>
+                <img src="/static/assets/img/home.jpg" class="mt-4 logoPrincipal" alt="">  
+                <h1 id="titulo" class="m-0">Barber Shop</h1>
+                <a href="#" class="link">barbearia-shop</a>
             </div>
         </div>
 <!-- resumo do negocio -->
         <div class="container p-0 pt-2">
-            <p class="text-center">Bem-vindo à Hello Cake, onde cada bolo é uma obra-prima!
-
-                Nosso compromisso é criar bolos incríveis que encantam os olhos e deliciam o paladar. Com ingredientes de alta qualidade e criatividade sem limites, transformamos suas celebrações em momentos inesquecíveis.
-                
-                Dos clássicos aos extravagantes, nossos bolos são feitos sob medida para cada ocasião especial. Venha nos visitar e descubra o sabor da felicidade!
+            <p class="text-center">
+                Bem-vindo à "Mão Hábil", onde cada corte é uma obra-prima! Nosso compromisso é criar 
+                visuais que encantam os olhos e elevam a autoestima. Com técnicas refinadas e produtos de
+                qualidade premium, transformamos seu estilo em algo inesquecível. Dos cortes 
+                tradicionais aos mais ousados, nossos serviços são personalizados para cada cliente. 
+                Venha nos visitar e descubra o poder de um visual impecável!
             </p>
         </div>
 <!-- arvore de link/conteudo -->
@@ -54,38 +56,34 @@
             <!-- links/conteudo -->
             <div id="arvore_links" class="row">
                 <a href="#" class="mt-3 links hoverLinks ">
-                    <img src="/static/assets/icons/ifood-logo.svg" class="me-2"> Ifood  
+                    <img src="/static/assets/icons/whatsapp-svgrepo-com.svg" class=" me-2"> whatsapp  
                 </a>
                 <a href="#" class="mt-2 links hoverLinks">
-                    <img src="/static/assets/icons/youtube-minimal-icon-1.svg" class="me-2" alt=""> Youtube 
+                    <img src="/static/assets/icons/instagram-svgrepo-com.svg" class="me-2" alt=""> Instagram 
                 </a>
                 <a href="#" class="mt-2 links hoverLinks">
-                    <img src="/static/assets/icons/instagram-2016-5.svg" class="me-2" alt=""> Instagram 
+                    <img src="/static/assets/icons/youtube-168-svgrepo-com.svg" class="me-2" alt=""> Youtube 
                 </a>
+            
                 
-                <a href="#" class="mt-2 links hoverLinks">
-                    <img src="/static/assets/icons/ifood-logo.svg" class="me-2"> Ifood 
-                </a>
-                <a href="#" class="mt-2 links hoverLinks">
-                    <img src="/static/assets/icons/youtube-minimal-icon-1.svg" class="me-2" alt=""> Youtube 
-                </a>
-                <a href="#" class="mt-2 links hoverLinks">
-                    <img src="/static/assets/icons/instagram-2016-5.svg" class="me-2" alt=""> Instagram 
-                </a>
+                
             </div>   
             <div id="conteudo" class="row p-2"></div>     
         </div>
-       
-    </main>
-<!-- botao whatsapp -->
-    <div class="ms-2 mb-3 ms-sm-3 mb-sm-3 ms-md-3 mb-md-3">
-        <a href="https://api.whatsapp.com/send?phone=5577988180366&text=em desenvolvimento" target="_blank">
-            <button class="whatsapp"><img src="../static/assets/icons/whatsapp-8.svg" class="img-fluid" alt=""></button>
+
+        <a href="#" class="boxBackforTop">
+            <div class="seta-cima">
+                <img src="/static/assets/icons/seta-cima.svg" alt="">
+            </div>
         </a>
-    </div>
+    </main>
+
 <!-- final -->
     <footer>
-        <img src="/static/assets/icons/apple-svgrepo-com.svg" class="me-2" alt=""><a href="https://www.instagram.com/64.bitts/">Desenvolvido por @64.bitts</a> 
+        <a href="https://api.whatsapp.com/send?phone=&text=" target="_blank">
+            <button class="whatsapp"><img src="../static/assets/icons/whatsapp-svgrepo-com.svg" class="img-fluid" alt=""></button>
+        </a> Desenvolvido por <a href="https://www.instagram.com/64.bitts/" class="ps-1 link">@64.bitts</a> 
+        
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
@@ -94,6 +92,20 @@
 </body>
 
 <script>
+    /* Botão voltar ao topo */
+    let botao = document.querySelector(".seta-cima");
+            window.addEventListener("scroll", function () {
+            botao.style.display = "none";
+
+            if (window.scrollY < 500) {
+                botao.style.display = "none";
+            } else {
+                botao.style.display = "block";
+            }
+            });
+
+
+
     window.addEventListener('scroll', function() {
         var navbar = document.getElementById('navbar');
         if (window.scrollY > 0) {
